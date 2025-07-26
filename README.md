@@ -17,6 +17,8 @@ This is a custom new tab Chrome extension built using React and Vite.
 npm install
 npm run dev
 
+```
+
 ## 🖼 Preview
 
 ![Custom New Tab Screenshot](./public/screencapture-localhost-5173-2025-07-26-19_04_58.png)
