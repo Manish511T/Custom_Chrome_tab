@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.neon-green-blink {
+  animation: blink 1s infinite;
+  box-shadow: 0 0 4px #22c55e, 0 0 10px #22c55e;
+}
+
+.neon-red-blink {
+  animation: blink 1s infinite;
+  box-shadow: 0 0 4px #ef4444, 0 0 10px #ef4444;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgb(66, 93, 66), 0 0 20px rgb(34, 57, 34);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(34, 57, 34), 0 0 40px rgb(34, 57, 34);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(34, 57, 34), 0 0 20px rgb(34, 57, 34);
+  }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+  font-weight: bold;
+}
+
+.animate-flicker {
+  animation: flicker 2s infinite;
+}
+
+.glowing-box {
+  animation: glow 2s infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
