@@ -51,7 +51,7 @@ const App = () => {
       <div className={`absolute bottom-0 left-5 right-0 px-6 py-4 flex justify-between items-center transition-opacity ${showForm ? 'opacity-30 pointer-events-none' : ''}`}>
         <SystemScanner />
       </div>
-      <div className={`absolute bottom-0 right-7 p-6 transition-opacity z-2 ${showForm ? 'opacity-30 pointer-events-none' : ''}`}>
+      <div className={`absolute bottom-0 right-7 p-6 transition-opacity z-20 ${showForm ? 'opacity-30 pointer-events-none' : ''}`}>
         <UserProfile />
       </div>
       <div className='absolute top-[60%] left-[50%] w-full h-full overflow-hidden bg-transparent text-green-400/40 font-mono text-[14px] leading-tight z-0 pointer-events-none'>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const characters = '01⛓️⚡#@%&$¥';
+const characters = '01⛓️⚡#@%&$¥ 127895@#4&^[}](0/;:';
 const getRandomChar = () => characters[Math.floor(Math.random() * characters.length)];
 
 const MatrixRain = ({ columns = 40, rows = 25 }) => {
